@@ -1,0 +1,8 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 4.3.3"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-scholar"
+gem "jekyll-include-cache"
+gem "jekyll-remote-theme"
