@@ -11,10 +11,8 @@ I'm a [your role or profession] with interests in [your interests].
 
 Here you'll find my work, thoughts, and projects.
 
-<!-- You can add more sections here -->
 git add _pages/about.md
 git commit -m "Add about.md to serve as homepage"
-git rm index.md
-git commit -m "Remove index.md to avoid homepage conflict"
 git push origin main
+
 
