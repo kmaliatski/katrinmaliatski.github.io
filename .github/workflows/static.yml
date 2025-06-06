@@ -42,36 +42,14 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-name: Deploy Jekyll site to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main  # or your default branch
-
-jobs:
-  github-pages:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1' # or whatever version you need
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Copy JS file
+      - name: Minify JavaScript (copy main.js → main.min.js)
         run: cp assets/js/main.js assets/js/main.min.js
 
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+        id: deployment
+        uses: actions/deploy-pages@v4
