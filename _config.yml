@@ -1,21 +1,45 @@
+# ----------------------------
+# Basic Site Settings
+# ----------------------------
+
 title: Katrin Maliatski
-description: "A simple, whitespace theme for academics."
+description: Personal academic website
+url: "https://kmaliatski.github.io" # replace with your GitHub Pages site URL
+baseurl: "" # Leave blank if publishing to root, e.g. username.github.io
+
+# ----------------------------
+# GitHub Pages Theme
+# ----------------------------
 
 remote_theme: pages-themes/minimal@v0.2.0
+
+# ----------------------------
+# Author Info (Optional)
+# ----------------------------
+
+author: Katrin Maliatski
+email: your-email@example.com
+
+# ----------------------------
+# Social (Optional)
+# ----------------------------
+
+# Use these if you want links in your footer
+twitter_username: yourusername
+github_username: kmaliatski
+linkedin_username: yourusername
+
+# ----------------------------
+# Plugins (Only ones GitHub Pages allows)
+# ----------------------------
+
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-seo-tag
 
-url: "https://kmaliatski.github.io"
-baseurl: "/katrinmaliatski.github.io"
+# ----------------------------
+# Build Settings
+# ----------------------------
 
-lang: en
+markdown: kramdown
 theme: minimal
-
-# Optional settings
-author:
-  name: Katrin Maliatski
-
-# GitHub Pages specific settings
-github:
-  is_project_page: true
