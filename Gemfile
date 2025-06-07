@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "bundler", "~> 2.4" # to manage dependencies reliably
 gem "jekyll", "~> 4.3.4"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
@@ -21,3 +22,4 @@ gem "jekyll-titles-from-headings"
 gem "jekyll-link-attributes"
 gem "jemoji"
 gem "webrick", "~> 1.7" # required to serve locally in Ruby 3+
+gem "github-pages", group: :jekyll_plugins
