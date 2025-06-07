@@ -22,4 +22,3 @@ gem "jekyll-titles-from-headings"
 gem "jekyll-link-attributes"
 gem "jemoji"
 gem "webrick", "~> 1.7"
-gem "github-pages", group: :jekyll_plugins
