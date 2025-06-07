@@ -19,13 +19,11 @@ jobs:
         with:
           ruby-version: 3.1
 
-      - name: Install correct Bundler version
-        run: gem install bundler -v "~> 2.4"
-
+      - name: Install compatible Bundler version
+        run: gem install bundler -v "2.6.9"
+      
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+        run: bundle _2.6.9_ install
 
       - name: Build site with Jekyll
         run: bundle exec jekyll build
