@@ -5,3 +5,5 @@ icon: ☕️
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
